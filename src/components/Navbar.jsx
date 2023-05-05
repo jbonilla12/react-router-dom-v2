@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 
 const Navbar = () => { 
     return( 
-            <nav class="navbar navbar-dark bg-dark">
+            <nav className="navbar navbar-dark bg-dark">
                 <div className="container gap-4">
                     <NavLink to='/' className='btn btn-outline-primary'>Home</NavLink>
                     <NavLink to='/about' className='btn btn-outline-primary'>About</NavLink>
