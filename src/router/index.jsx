@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import About from "../pages/About";
+import Post, { loaderPost } from "../pages/Post";
 import Blog, { loaderBlog } from "../pages/Blog";
 import NotFound from "../pages/NotFound";
 import LayoutPublic from "../layout/LayoutPublic";
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
                 path: '/blog',
                 element: <Blog/>,
                 loader: loaderBlog
+            },{
+                path: '/blog/:id',
+                element: <Post/>,
+                loader: loaderPost
             }
         ]
     }
